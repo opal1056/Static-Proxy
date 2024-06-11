@@ -31,34 +31,36 @@
         </div> 
     </div>
    <div class="text-center">
-   <button onClick="window.location.href=window.location.href">Launch in About:Blank</button>    
+   <button id="launchButton">Launch in About:Blank</button>
+
 <script>
-      var urlObj = new window.URL(window.location.href);
-      var url = "https://arctic-app.vercel.app/";
-      if (url) {
+    document.addEventListener("DOMContentLoaded", function() {
+        var url = "https://arctic-app.vercel.app/";
+        var redirectUrl = "https://studentportal.educationincites.com/#/Home";
         var win;
- 
-        document.querySelector('button').onclick = function() {
-          if (win) {
-            win.focus();
-          } else {
-            win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-          }
-          document.querySelector('button').style.bacground = 'grey';
-          document.querySelector('button').innerHTML = "Launch in About:Blank";
+
+        document.querySelector('#launchButton').onclick = function() {
+            if (win) {
+                win.focus();
+            } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('#launchButton').style.background = 'grey';
+            document.querySelector('#launchButton').innerHTML = "Launch in About:Blank";
+            window.location.href = redirectUrl;  // Redirect the current window
         };
-      }
- 
-    </script>
+    });
+</script>
+
 <style>*{color:lightblue;font-family:arial;text-align:center}button{width:220px;height:40px;border-radius:12px;background-color:#080808;font-family:Arial,Helvetica,sans-serif;border:none;transition:background-color 500ms}button:hover{background-color:#080808}</style>
   </div>
 <br>
