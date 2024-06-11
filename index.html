@@ -6,35 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Classes</title>
     <meta name="description" content="Arctic is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!">
-    <meta name="keywords" content="proxy, web proxy, Arctic, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, unblock chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
+    <meta name="keywords" content="proxy, web proxy, Arctic, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
     <meta name="googlebot" content="index, follow, snippet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body onload="showAlert()">
-    <header class="header">
-        <nav class="nav">
-            <a href="https://github.com" target="_blank" class="nav-link">
-                <img src="path/to/github.png" alt="GitHub" class="nav-icon">
-            </a>
-            <div class="nav-title">Arctic</div>
-            <div class="nav-right">
-                <a href="#" class="nav-link">
-                    <img src="path/to/games.png" alt="Games" class="nav-icon">
-                </a>
-                <a href="#" class="nav-link">
-                    <img src="path/to/apps.png" alt="Apps" class="nav-icon">
-                </a>
-                <a href="#" class="nav-link">
-                    <img src="path/to/settings.png" alt="Settings" class="nav-icon">
-                </a>
-            </div>
-        </nav>
-    </header>
-
     <div class="desc">
-        <h1 class="title" style="background-color:lightblue;">Arctic</h1>
+        <h1 style="background-color:lightblue;" class="title">Arctic</h1>
         <p>A highly sophisticated proxy website used for evading internet censorship and unblocking websites that are blocked in your school. Uses the Ultraviolet Proxy to run.</p>
     </div>
 
@@ -42,7 +22,7 @@
         <button id="launchButton">Launch in About:Blank</button>
     </div>
 
-    <footer>
+    <footer style="bottom: 0; position: fixed;">
         <p>&copy; OpalNetwork</p>
     </footer>
 
@@ -72,11 +52,6 @@
                 window.location.href = redirectUrl;  // Redirect the current window
             };
         });
-
-        // Example showAlert function, ensure you define it
-        function showAlert() {
-            alert("Page Loaded");
-        }
     </script>
 
     <style>
@@ -84,51 +59,6 @@
             color: lightblue;
             font-family: Arial, sans-serif;
             text-align: center;
-        }
-        
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        
-        header {
-            background-color: #080808;
-            padding: 10px;
-        }
-        
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-link {
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        .nav-icon {
-            width: 24px;
-            height: 24px;
-        }
-        
-        .nav-title {
-            flex-grow: 1;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            color: lightblue;
-        }
-        
-        .nav-right {
-            display: flex;
-        }
-        
-        .desc {
-            padding: 20px;
-            flex-grow: 1;
         }
         
         button {
@@ -139,20 +69,14 @@
             font-family: Arial, Helvetica, sans-serif;
             border: none;
             transition: background-color 500ms;
-            color: white;
         }
         
         button:hover {
             background-color: #505050;
         }
         
-        footer {
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background-color: #080808;
-            color: lightblue;
+        .desc {
+            padding: 20px;
         }
     </style>
 </body>
