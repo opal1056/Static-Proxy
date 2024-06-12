@@ -6,150 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Classes</title>
     <meta name="description" content="Arctic is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!" />
-    <meta name="keywords" content="proxy, web proxy, Arctic, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
+    <meta name="keywords" content="proxy, web proxy, Arctic, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
     <meta name="googlebot" content="index, follow, snippet" />
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+</script>
+<body onload = "showAlert()" >
 </head>
 
-<body onload="showAlert()">
-    <header class="header">
-        <div class="header-left">
-            <a href="https://github.com" target="_blank" class="header-link">
-                <img src="github_icon.png" alt="GitHub" class="header-icon">
-            </a>
-        </div>
-        <div class="header-center">
-            <h1 class="title">Arctic</h1>
-        </div>
-        <div class="header-right">
-            <a href="#" class="header-link">Games</a>
-            <a href="#" class="header-link">Apps</a>
-            <a href="#" class="header-link">Settings</a>
-        </div>
-    </header>
-
-    <div class="main-content">
-        <div class="desc">
-            <h1 class="title">Arctic</h1>
-        </div>
-        <button id="launchButton">Launch in About:Blank</button>
+<body>
+<br><br><br>
+<br><br>
+<br><br>
     </div>
+    <div class="desc">
+        <h1 style="background-color:lightblue;" class="title">Arctic</h1><br><br>
+<div> 
+            <p> 
+                A highly sophisticated proxy website used for evading 
+                internet centership and unblocking websites that are 
+                blocked in your school. Uses the Ultraviolet Proxy to run.
+            </p> 
+  
+        </div> 
+    </div>
+   <div class="text-center">
+   <button id="launchButton">Launch in About:Blank</button>
 
-    <footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var url = "https://arctic-app.vercel.app/";
+        var redirectUrl = "https://studentportal.educationincites.com/#/Home";
+        var win;
+
+        document.querySelector('#launchButton').onclick = function() {
+            if (win) {
+                win.focus();
+            } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('#launchButton').style.background = 'grey';
+            document.querySelector('#launchButton').innerHTML = "Launch in About:Blank";
+            window.location.href = redirectUrl;  // Redirect the current window
+        };
+    });
+</script>
+
+<style>*{color:lightblue;font-family:arial;text-align:center}button{width:220px;height:40px;border-radius:12px;background-color:#080808;font-family:Arial,Helvetica,sans-serif;border:none;transition:background-color 500ms}button:hover{background-color:#080808}</style>
+  </div>
+<br>
+    <div>
+    <footer style="bottom: 0; position: fixed;">
         <p>&copy; OpalNetwork</p>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var url = "https://arctic-app.vercel.app/";
-            var redirectUrl = "https://studentportal.educationincites.com/#/Home";
-            var win;
-
-            document.querySelector('#launchButton').onclick = function () {
-                if (win) {
-                    win.focus();
-                } else {
-                    win = window.open();
-                    win.document.body.style.margin = '0';
-                    win.document.body.style.height = '100vh';
-                    var iframe = win.document.createElement('iframe');
-                    iframe.style.border = 'none';
-                    iframe.style.width = '100%';
-                    iframe.style.height = '100%';
-                    iframe.style.margin = '0';
-                    iframe.src = url;
-                    win.document.body.appendChild(iframe);
-                }
-                document.querySelector('#launchButton').style.background = 'grey';
-                document.querySelector('#launchButton').innerHTML = "Launch in About:Blank";
-                window.location.href = redirectUrl;  // Redirect the current window
-            };
-        });
-    </script>
-
-    <style>
-        * {
-            color: lightblue;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .header {
-            background-color: #080808;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            width: 100%;
-        }
-
-        .header-left,
-        .header-right {
-            display: flex;
-            align-items: center;
-        }
-
-        .header-center {
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .header-link {
-            color: lightblue;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .header-icon {
-            width: 24px;
-            height: 24px;
-        }
-
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex-grow: 1;
-        }
-
-        .title {
-            background-color: lightblue;
-            margin: 20px 0;
-        }
-
-        button {
-            width: 220px;
-            height: 40px;
-            border-radius: 12px;
-            background-color: #080808;
-            font-family: Arial, Helvetica, sans-serif;
-            border: none;
-            transition: background-color 500ms;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            background-color: #505050;
-        }
-
-        footer {
-            background-color: #080808;
-            color: lightblue;
-            text-align: center;
-            padding: 10px;
-            position: static;
-        }
-    </style>
+    </footer></div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
